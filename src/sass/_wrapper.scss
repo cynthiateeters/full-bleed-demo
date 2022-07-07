@@ -33,3 +33,9 @@
     aspect-ratio: 3;
   }
 }
+
+@media screen and (min-width: 150em) {
+  .full-bleed img {
+    aspect-ratio: 4;
+  }
+}
