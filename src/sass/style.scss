@@ -1,7 +1,12 @@
 @import "reset";
+@import "wrapper";
 
 body {
   font-family: sans-serif;
   background-color: aliceblue;
 }
 
+pre {
+  width: max-content;
+  margin-inline: auto;
+}
