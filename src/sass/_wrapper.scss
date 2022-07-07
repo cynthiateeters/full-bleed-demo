@@ -1,5 +1,6 @@
 .wrapper {
     display: grid;
+    gap: var(--gutter, 0);
     grid-template-columns:
       1fr
       min(65ch, 100% - 2rem)
