@@ -74,12 +74,27 @@ svg {
 .full-bleed {
   width: 100%;
   grid-column: 1/4;
+  height: min-content;
 }
 
+.full-bleed img {
+  aspect-ratio: 2.5;
+  object-fit: cover;
+  object-position: 50% 75%;
+}
+
+@media screen and (min-width: 60em) {
+  .full-bleed img {
+    aspect-ratio: 2.75;
+  }
+}
+@media screen and (min-width: 100em) {
+  .full-bleed img {
+    aspect-ratio: 3;
+  }
+}
 body {
   --gutter: 1rem;
-  display: grid;
-  grid-template-rows: 1fr auto 1fr;
 }
 
 header,

@@ -1,15 +1,35 @@
 .wrapper {
-    display: grid;
-    gap: var(--gutter, 0);
-    grid-template-columns:
-      1fr
-      min(65ch, 100% - 2rem)
-      1fr;
+  display: grid;
+  gap: var(--gutter, 0);
+  grid-template-columns:
+    1fr
+    min(65ch, 100% - 2rem)
+    1fr;
+}
+.wrapper > * {
+  grid-column: 2;
+}
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / 4;
+  height: min-content;
+}
+
+.full-bleed img {
+  aspect-ratio: 2.5;
+  object-fit: cover;
+      object-position: 50% 75%;
+}
+
+@media screen and (min-width: 60em) {
+  .full-bleed img {
+    aspect-ratio: 2.75;
+
   }
-  .wrapper > * {
-    grid-column: 2;
+}
+
+@media screen and (min-width: 100em) {
+  .full-bleed img {
+    aspect-ratio: 3;
   }
-  .full-bleed {
-    width: 100%;
-    grid-column: 1 / 4;
-  }
+}
