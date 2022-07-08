@@ -100,12 +100,20 @@ svg {
 }
 body {
   --gutter: 1rem;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  gap: var(--gutter, 0);
 }
 
 header,
 footer {
   text-align: center;
   padding-block: var(--gutter, 0);
+}
+
+footer {
+  --fluid-type-target: 1vw;
+  font-size: clamp(var(--fluid-type-min, 0.8rem), 0.5rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.125rem));
 }
 
 pre {
