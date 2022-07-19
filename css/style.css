@@ -106,17 +106,18 @@ body {
 }
 
 :where(h1, h2) {
-  --fluid-type-min: 2rem;
+  --fluid-type-min: 2.8rem;
   --fluid-type-max: 7rem;
-  --fluid-type-target: 6vw;
+  --fluid-type-target: 9vw;
   font-weight: bold;
   font-size: clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.3rem));
 }
 
 h2 {
-  --fluid-type-min: 1rem;
-  --fluid-type-max: 2rem;
+  --fluid-type-min: 1.5rem;
+  --fluid-type-max: 3rem;
   --fluid-type-target: 2vw;
+  font-size: clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.3rem));
 }
 
 header,
