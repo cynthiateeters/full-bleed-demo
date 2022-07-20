@@ -127,6 +127,7 @@ footer {
 }
 
 footer {
+  padding-block: 2rem;
   --fluid-type-target: 1vw;
   font-size: clamp(var(--fluid-type-min, 0.8rem), 0.5rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.125rem));
 }
@@ -135,6 +136,7 @@ pre {
   --fluid-type-max: 1.5rem;
   font: inherit;
   font-size: clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.3rem));
+  font-size: clamp(1.25rem, 0.7262rem + 2.619vw, 4rem);
 }
 
 body {
