@@ -39,6 +39,7 @@ footer {
 }
 
 footer {
+  padding-block: 2rem;
   --fluid-type-target: 1vw;
   font-size: clamp(
     var(--fluid-type-min, 0.8rem),

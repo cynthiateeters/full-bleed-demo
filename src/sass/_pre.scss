@@ -6,6 +6,8 @@ pre {
     calc(1rem + var(--fluid-type-target, 3vw)),
     var(--fluid-type-max, 1.3rem)
   );
+// https://codesandbox.io/s/clamp-linear-intepolation-based-on-viewport-width-builder-xgkft?from-embed
+  font-size: clamp(1.25rem, 0.7262rem + 2.6190vw, 4rem);
 }
 
 // https://piccalil.li/tutorial/fluid-typography-with-css-clamp/
