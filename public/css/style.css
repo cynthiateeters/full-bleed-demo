@@ -107,7 +107,7 @@ body {
 
 :where(h1, h2) {
   --fluid-type-min: 2.8rem;
-  --fluid-type-max: 7rem;
+  --fluid-type-max: 12rem;
   --fluid-type-target: 9vw;
   font-weight: bold;
   font-size: clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.3rem));
@@ -115,7 +115,7 @@ body {
 
 h2 {
   --fluid-type-min: 1.5rem;
-  --fluid-type-max: 3rem;
+  --fluid-type-max: 5rem;
   --fluid-type-target: 2vw;
   font-size: clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.3rem));
 }
@@ -127,14 +127,16 @@ footer {
 }
 
 footer {
+  padding-block: 2rem;
   --fluid-type-target: 1vw;
   font-size: clamp(var(--fluid-type-min, 0.8rem), 0.5rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.125rem));
 }
 
 pre {
-  --fluid-type-max: 1.5rem;
+  --fluid-type-max: 5rem;
   font: inherit;
   font-size: clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.3rem));
+  font-size: clamp(1.25rem, 0.7262rem + 2.619vw, 4rem);
 }
 
 body {
